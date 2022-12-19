@@ -45,7 +45,11 @@
     <!-- Title and Phone Image start -->
     <div class="row bg">
       <div style="height: 2rem;"></div>
-      <img src="assets/chakra.jpg" class="mx-auto my-5" alt="iphone-image" style="width: 60%;" />
+      <img src="assets/chakra.jpg" class="mx-auto my-5" alt="iphone-image" style="@media screen and (max-width: 768px) {
+        width: 60%;
+      }
+      width: 80%;" />;
+
       <div style="height: 2rem;"></div>
       <div class="row email_form text-center my-5">
         <form id="mail-form" class="form-inline">
@@ -59,21 +63,26 @@
           </div>
         </form>
       </div>
-      <div class="mx-auto text-center " style="width: 36%;" >
+      <div class="mx-auto text-center " style="@media screen and (max-width: 768px) {
+        width: 36%;
+      }
+      width: 100%;">
         <p style="font-size: 1.5rem; font-weight: 400; color: #535152; font-family: 'Montserrat', sans-serif;">
-          Watch a TedX Talk by 
+          Watch a TedX Talk by
           <span style="font-weight: 900;">
             Stan Lee
           </span>
-           on Storytelling presented in Mumbai
+          on Storytelling presented in Mumbai
         </p>
       </div>
       <div style="height: 2rem;"></div>
-      <iframe style="width: 60%; height: 540px;" class="mx-auto"  src="https://www.youtube.com/embed/DSGf6is3U2w"
-        title="What makes a superhero? | Stan Lee | TEDxGateway 2013" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+      <div class="video-container">
+        <iframe class="self-center" src="https://www.youtube.com/embed/DSGf6is3U2w"
+          title="What makes a superhero? | Stan Lee | TEDxGateway 2013" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
       <div class="col-10 col-xl-9 mx-auto">
         <div class="row main">
           <div class="col-xl-8 col-12 title text-center">
@@ -119,7 +128,7 @@
         <!-- NOTIFY start -->
         <div class="row notify">
           <div class="col-10 col-xl-9 mx-auto">
-            
+
             <div class="row email_txt2 txt-center">
               <p>For Business, partnerships, media or press <br> contact us at: <a
                   href="mailto:info@toonsutra.com">info@toonsutra.com</a></p>
