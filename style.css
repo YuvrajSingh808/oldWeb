@@ -584,13 +584,44 @@
   margin-right: auto;
 }
 
-.chakra {
+.chakra-image {
   width: 60%;
+  background-image: url('assets/chakra.jpg'); 
+  height: 36rem;
+  background-repeat: no-repeat; 
+  background-size: contain;
+  margin: auto;
+}
+
+.height-box {
+  height: 4rem;
 }
 
 .stanLee {
   font-size: 1.5rem; font-weight: 400; color: #535152; font-family: 'Montserrat', sans-serif;
 }
+
+.success-logo {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  max-width: 15%;
+  height: auto;
+  align-self: auto;
+  text-decoration: none;
+}
+
+.success-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.success-content {
+  width: 75%;
+}
+
 @media screen and (max-width: 768px) {
   .video-container {
     padding-bottom: 56.25%;
@@ -599,10 +630,23 @@
     width: 100%;
     height: 100%;
   }
-  .chakra {
-    width: 100%;
+  .chakra-image {
+    width: 100vw;
+    height: 15rem; 
   }
   .stanLee {
     font-size: 1rem;
+  }
+  .height-box {
+    height: 1rem;
+  }
+  .success-logo {
+    max-width: 60%;
+  }
+  .success-heading {
+    font-size: 2rem;
+  }
+  .success-content {
+    width: 100%;
   }
 }
