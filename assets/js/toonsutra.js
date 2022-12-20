@@ -18,6 +18,20 @@ document.getElementById("mail-form").addEventListener("submit", async (ev) => {
       }
     );
     let data = await response.json();
+    let emailData = await fetch(
+      "https://ovk8yfmyxk.execute-api.us-east-1.amazonaws.com/Production",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          email: email.value.trim(),
+        }),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(await emailData.json());
     spinner.style.display = "none";
     window.location.href = "/success.html";
   } catch (error) {
