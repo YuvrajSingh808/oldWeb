@@ -33,7 +33,7 @@ document.getElementById("mail-form").addEventListener("submit", async (ev) => {
     );
     console.log(await emailData.json());
     spinner.style.display = "none";
-    window.location.href = window.location.href + "/success.html";
+    window.location.href = "toonsutra.com";
   } catch (error) {
     spinner.style.display = "none";
     console.log(error);
